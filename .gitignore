@@ -29,6 +29,12 @@ task.md
 # 5. 屏蔽实验报告与文档 (本地编译，不上传)
 *.pdf
 *.docx
+*.aux
+*.toc
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
 
 # 6. 屏蔽课程大作业特定测试说明及模板
 大作业测试说明/

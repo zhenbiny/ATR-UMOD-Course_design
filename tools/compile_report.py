@@ -21,7 +21,13 @@ for name, src in src_images.items():
         shutil.copy2(src, os.path.join(BUILD_DIR, name))
         print(f"成功复制 {name}")
     else:
-        print(f"警告：找不到文件 {src}")
+        # 尝试从 assets 目录复制作为备份
+        backup_src = os.path.join(PROJECT_DIR, "assets", name)
+        if os.path.exists(backup_src):
+            shutil.copy2(backup_src, os.path.join(BUILD_DIR, name))
+            print(f"已从 assets 备份目录复制 {name}")
+        else:
+            print(f"警告：找不到文件 {src}，且备份路径 {backup_src} 亦不存在")
 
 # 编写 LaTeX 模板
 latex_content = r"""\documentclass[utf8,a4paper,zihao=-4]{ctexart}

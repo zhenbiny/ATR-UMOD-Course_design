@@ -13,22 +13,22 @@
 ### 1. 训练收敛指标曲线
 下图为 Fold 0 在 25 个 Epoch 期间的各种 Loss（分类、边界框回归、角度）与 Precision/Recall/mAP 的收敛趋势。可以观察到余弦退火策略引导模型在后期平稳饱和。
 
-![训练收敛曲线](multimodal_detection/workspace/yolov8_fold0/results.png)
+![训练收敛曲线](assets/results.png)
 
 ### 2. 预测混淆矩阵 (Confusion Matrix)
 模型在 `car`（小汽车）、`bus`（大客车）等主要类别上识别率极高，且模型自动学习到了极具几何相关性的特征（如 SUV 与普通轿车、卡车与挂车之间有轻微的合理混淆）。
 
-![混淆矩阵](multimodal_detection/workspace/yolov8_fold0/confusion_matrix.png)
+![混淆矩阵](assets/confusion_matrix.png)
 
 ### 3. 本地验证集批量预测样例
 在倾斜航拍视角下，多模态通道拼接模型完美贴合了目标的旋转角度，有效解决了密集车流中水平框重叠造成的“非极大值抑制（NMS）误杀”漏检问题。
 
-![验证集批量预测](multimodal_detection/workspace/yolov8_fold0/val_batch0_pred.jpg)
+![验证集批量预测](assets/val_batch0_pred.jpg)
 
 ### 4. 遥感密集场景融合检测结果
 下图展示了对密集并行车队的精细化旋转框检测，定位精度极高，框体方向与车辆行驶方向保持完美一致：
 
-![遥感场景旋转目标检测](multimodal_detection/val_05346_pred.jpg)
+![遥感场景旋转目标检测](assets/val_05346_pred.jpg)
 
 ---
 
