@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>1_275.jpg</filename>
+	<path>orign/images/1_275.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>60</UAVangle>
+	<UAVheight>120</UAVheight>
+	<weather>7</weather>
+	<illumination>6</illumination>
+	<time>2022-6-17T18:58</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>crane</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>51.45606231689453</cx>
+			<cy>108.64556884765625</cy>
+			<w>44.67506790161133</w>
+			<h>20.936283111572266</h>
+			<angle>30.455331802368164</angle>
+		</robndbox>
+		<polygon>
+			<x1>26.89459991455078</x1>
+			<y1>106.34719848632812</y1>
+			<x2>59.922481536865234</x2>
+			<y2>125.76744079589844</y2>
+			<x3>76.01750183105469</x3>
+			<y3>110.94390106201172</y3>
+			<x4>40.54263687133789</x4>
+			<y4>91.6589126586914</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

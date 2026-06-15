@@ -1,0 +1,47 @@
+# Fixed-size YOLOv8s OBB model for ATR-UMOD RGB-only aerial detection.
+# Adds a P2/4 detection head and lightweight CBAM blocks on shallow features.
+
+nc: 11
+
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, Conv, [32, 3, 2]]       # 0-P1/2
+  - [-1, 1, Conv, [64, 3, 2]]       # 1-P2/4
+  - [-1, 1, C2f, [64, true]]        # 2
+  - [-1, 1, Conv, [128, 3, 2]]      # 3-P3/8
+  - [-1, 2, C2f, [128, true]]       # 4
+  - [-1, 1, Conv, [256, 3, 2]]      # 5-P4/16
+  - [-1, 2, C2f, [256, true]]       # 6
+  - [-1, 1, Conv, [512, 3, 2]]      # 7-P5/32
+  - [-1, 1, C2f, [512, true]]       # 8
+  - [-1, 1, SPPF, [512, 5]]         # 9
+
+head:
+  - [-1, 1, nn.Upsample, [null, 2, nearest]]
+  - [[-1, 6], 1, Concat, [1]]       # 11 cat backbone P4
+  - [-1, 1, C2f, [256]]             # 12
+
+  - [-1, 1, nn.Upsample, [null, 2, nearest]]
+  - [[-1, 4], 1, Concat, [1]]       # 14 cat backbone P3
+  - [-1, 1, C2f, [128]]             # 15
+  - [-1, 1, CBAM, [128, 7]]         # 16 refined P3
+
+  - [-1, 1, nn.Upsample, [null, 2, nearest]]
+  - [[-1, 2], 1, Concat, [1]]       # 18 cat backbone P2
+  - [-1, 1, C2f, [64]]              # 19
+  - [-1, 1, CBAM, [64, 7]]          # 20 P2/4-small
+
+  - [-1, 1, Conv, [64, 3, 2]]
+  - [[-1, 16], 1, Concat, [1]]      # 22 cat head P3
+  - [-1, 1, C2f, [128]]             # 23 P3/8
+
+  - [-1, 1, Conv, [128, 3, 2]]
+  - [[-1, 12], 1, Concat, [1]]      # 25 cat head P4
+  - [-1, 1, C2f, [256]]             # 26 P4/16
+
+  - [-1, 1, Conv, [256, 3, 2]]
+  - [[-1, 9], 1, Concat, [1]]       # 28 cat head P5
+  - [-1, 1, C2f, [512]]             # 29 P5/32
+
+  - [[20, 23, 26, 29], 1, OBB, [nc, 1]] # OBB(P2, P3, P4, P5)
+

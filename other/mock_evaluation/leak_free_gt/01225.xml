@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_328.jpg</filename>
+	<path>orign/images/3_night_328.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T19:13</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>freight_car</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>281.61767578125</cx>
+			<cy>451.9977111816406</cy>
+			<w>122.52096557617188</w>
+			<h>21.3907413482666</h>
+			<angle>64.86395263671875</angle>
+		</robndbox>
+		<polygon>
+			<x1>317.32177734375</x1>
+			<y1>502.91387939453125</y1>
+			<x2>297.9566955566406</x2>
+			<y2>512.0</y2>
+			<x3>245.91358947753906</x3>
+			<y3>401.08154296875</y3>
+			<x4>265.2786560058594</x4>
+			<y4>391.99542236328125</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

@@ -1,0 +1,21 @@
+{
+  "settings_version": "0.0.6",
+  "datasets_dir": "C:\\Users\\17638\\Desktop\\NUDT\\\u667a\u80fd\u56fe\u50cf\u5904\u7406\\datasets",
+  "weights_dir": "weights",
+  "runs_dir": "runs",
+  "uuid": "071fbc2229101a309e4a3cd587e9deda37a2c8ea2cfe9b8f5ef11c970b879b0d",
+  "sync": true,
+  "api_key": "",
+  "openai_api_key": "",
+  "clearml": true,
+  "comet": true,
+  "dvc": true,
+  "hub": true,
+  "mlflow": true,
+  "neptune": true,
+  "raytune": true,
+  "tensorboard": false,
+  "wandb": false,
+  "vscode_msg": true,
+  "openvino_msg": true
+}

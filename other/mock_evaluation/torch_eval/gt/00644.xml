@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>2_442.jpg</filename>
+	<path>orign/images/2_442.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>75</UAVangle>
+	<UAVheight>160</UAVheight>
+	<weather>0</weather>
+	<illumination>0</illumination>
+	<time>2022-7-14T11:20</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	</annotation>

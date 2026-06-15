@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_290.jpg</filename>
+	<path>orign/images/3_night_290.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T19:13</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>300.1689453125</cx>
+			<cy>475.58355712890625</cy>
+			<w>36.45705032348633</w>
+			<h>15.221944808959961</h>
+			<angle>84.17364501953125</angle>
+		</robndbox>
+		<polygon>
+			<x1>294.4477233886719</x1>
+			<y1>494.4905090332031</y1>
+			<x2>309.5910339355469</x2>
+			<y2>492.9452819824219</y2>
+			<x3>305.89013671875</x3>
+			<y3>456.67657470703125</y3>
+			<x4>290.746826171875</x4>
+			<y4>458.2218017578125</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

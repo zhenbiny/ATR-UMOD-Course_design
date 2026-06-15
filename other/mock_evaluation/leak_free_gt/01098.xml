@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_141.jpg</filename>
+	<path>orign/images/3_night_141.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>45</UAVangle>
+	<UAVheight>200</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T18:50</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>321.0876770019531</cx>
+			<cy>295.1030578613281</cy>
+			<w>12.580562591552734</w>
+			<h>6.883349418640137</h>
+			<angle>86.33367156982422</angle>
+		</robndbox>
+		<polygon>
+			<x1>317.2507629394531</x1>
+			<y1>289.04571533203125</y1>
+			<x2>324.1200256347656</x2>
+			<y2>288.6055603027344</y2>
+			<x3>324.92449951171875</x3>
+			<y3>301.1603698730469</y3>
+			<x4>318.05523681640625</x4>
+			<y4>301.60052490234375</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

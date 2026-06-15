@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>1_2.jpg</filename>
+	<path>orign/images/1_2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>60</UAVangle>
+	<UAVheight>120</UAVheight>
+	<weather>1</weather>
+	<illumination>4</illumination>
+	<time>2022-6-5T16:10</time>
+	<location>2</location>
+	<segmented>0</segmented>
+	<object>
+		<name>excavator</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>111.11935424804688</cx>
+			<cy>249.67054748535156</cy>
+			<w>48.84284973144531</w>
+			<h>30.161434173583984</h>
+			<angle>5.443567752838135</angle>
+		</robndbox>
+		<polygon>
+			<x1>88.23870086669922</x1>
+			<y1>232.34109497070312</y1>
+			<x2>85.80909729003906</x2>
+			<y2>261.7015075683594</y2>
+			<x3>134.0</x3>
+			<y3>267.0</y3>
+			<x4>136.10589599609375</x4>
+			<y4>236.90260314941406</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

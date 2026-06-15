@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>2_696.jpg</filename>
+	<path>orign/images/2_696.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>160</UAVheight>
+	<weather>0</weather>
+	<illumination>0</illumination>
+	<time>2022-7-14T13:04</time>
+	<location>1</location>
+	<segmented>0</segmented>
+	<object>
+		<name>freight_car</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>362.3106994628906</cx>
+			<cy>105.8294448852539</cy>
+			<w>51.2550163269043</w>
+			<h>20.930742263793945</h>
+			<angle>85.1020278930664</angle>
+		</robndbox>
+		<polygon>
+			<x1>349.6954345703125</x1>
+			<y1>81.18907165527344</y1>
+			<x2>370.54974365234375</x2>
+			<y2>79.40196990966797</y2>
+			<x3>374.1400451660156</x3>
+			<y3>130.53717041015625</y3>
+			<x4>355.0318298339844</x4>
+			<y4>132.1273651123047</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

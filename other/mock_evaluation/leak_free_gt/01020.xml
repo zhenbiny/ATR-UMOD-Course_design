@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_day_71.jpg</filename>
+	<path>orign/images/3_day_71.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>45</UAVangle>
+	<UAVheight>120</UAVheight>
+	<weather>0</weather>
+	<illumination>2</illumination>
+	<time>2022-9-27T17:07</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>freight_car</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>172.95590209960938</cx>
+			<cy>457.7215270996094</cy>
+			<w>25.55122184753418</w>
+			<h>102.28424835205078</h>
+			<angle>17.937055587768555</angle>
+		</robndbox>
+		<polygon>
+			<x1>145.0509033203125</x1>
+			<y1>502.443359375</y1>
+			<x2>169.36019897460938</x2>
+			<y2>510.3124084472656</y2>
+			<x3>200.86090087890625</x3>
+			<y3>412.9996643066406</y3>
+			<x4>176.5515899658203</x4>
+			<y4>405.1305847167969</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

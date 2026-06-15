@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_320.jpg</filename>
+	<path>orign/images/3_night_320.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T19:13</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>crane</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>276.3170471191406</cx>
+			<cy>414.4378662109375</cy>
+			<w>81.42044830322266</w>
+			<h>19.91321563720703</h>
+			<angle>67.12244415283203</angle>
+		</robndbox>
+		<polygon>
+			<x1>282.9703063964844</x1>
+			<y1>455.81646728515625</y1>
+			<x2>301.31707763671875</x2>
+			<y2>448.074951171875</y2>
+			<x3>269.663818359375</x3>
+			<y3>373.0592346191406</y3>
+			<x4>251.3170166015625</x4>
+			<y4>380.8007507324219</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

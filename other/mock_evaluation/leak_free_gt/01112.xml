@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_154.jpg</filename>
+	<path>orign/images/3_night_154.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>45</UAVangle>
+	<UAVheight>200</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T18:50</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>truck</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>352.7410583496094</cx>
+			<cy>332.34039306640625</cy>
+			<w>14.081326484680176</w>
+			<h>70.2454833984375</h>
+			<angle>0.290362685918808</angle>
+		</robndbox>
+		<polygon>
+			<x1>345.8785095214844</x1>
+			<y1>297.18243408203125</y1>
+			<x2>359.95965576171875</x2>
+			<y2>297.2537841796875</y2>
+			<x3>359.6036682128906</x3>
+			<y3>367.4983825683594</y3>
+			<x4>345.52252197265625</x4>
+			<y4>367.427001953125</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

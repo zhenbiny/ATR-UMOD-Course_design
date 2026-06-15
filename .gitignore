@@ -1,0 +1,35 @@
+# ==============================================================================
+# ATR-UMOD Multimodal Detection Project Git Ignore Rules
+# ==============================================================================
+
+# 1. 屏蔽本地大型数据集文件夹
+ATR-UMOD/
+baseline_visible/data/
+multimodal_detection/data/
+
+# 2. 屏蔽本地训练生成的权重与日志工作空间
+baseline_visible/workspace/
+multimodal_detection/workspace/
+runs/
+.ultralytics/
+
+# 3. 屏蔽缓存与序列化文件
+__pycache__/
+*.pyc
+*.pkl
+*.zip
+*.url
+
+# 4. 屏蔽 IDE 本地临时配置
+.vscode/
+task.md
+*~
+*.log
+
+# 5. 屏蔽实验报告与文档 (本地编译，不上传)
+*.pdf
+*.docx
+
+# 6. 屏蔽课程大作业特定测试说明及模板
+大作业测试说明/
+大作业测试说明.zip

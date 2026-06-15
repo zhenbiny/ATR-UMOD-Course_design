@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_day_9.jpg</filename>
+	<path>orign/images/3_day_9.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>120</UAVheight>
+	<weather>0</weather>
+	<illumination>2</illumination>
+	<time>2022-9-27T16:58</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>suv</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>235.23800659179688</cx>
+			<cy>267.49566650390625</cy>
+			<w>38.83686828613281</w>
+			<h>16.539424896240234</h>
+			<angle>0.6774228811264038</angle>
+		</robndbox>
+		<polygon>
+			<x1>254.75286865234375</x1>
+			<y1>259.45611572265625</y1>
+			<x2>254.55731201171875</x2>
+			<y2>275.994384765625</y2>
+			<x3>215.72317504882812</x3>
+			<y3>275.53521728515625</y3>
+			<x4>215.91873168945312</x4>
+			<y4>258.9969482421875</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

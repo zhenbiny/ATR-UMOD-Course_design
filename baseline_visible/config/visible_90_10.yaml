@@ -1,0 +1,16 @@
+path: C:/Users/17638/Desktop/NUDT/智能图像处理/OnlyVisible/data
+train: C:/Users/17638/Desktop/NUDT/智能图像处理/OnlyVisible/data_splits/train.txt
+val: C:/Users/17638/Desktop/NUDT/智能图像处理/OnlyVisible/data_splits/val.txt
+nc: 11
+names:
+  0: car
+  1: suv
+  2: van
+  3: bus
+  4: freight_car
+  5: truck
+  6: motorcycle
+  7: trailer
+  8: excavator
+  9: crane
+  10: tank_truck

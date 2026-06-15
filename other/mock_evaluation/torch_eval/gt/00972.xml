@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>2_771.jpg</filename>
+	<path>orign/images/2_771.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>10</UAVangle>
+	<UAVheight>160</UAVheight>
+	<weather>0</weather>
+	<illumination>0</illumination>
+	<time>2022-7-14T12:50</time>
+	<location>1</location>
+	<segmented>0</segmented>
+	<object>
+		<name>suv</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>527.459228515625</cx>
+			<cy>329.75091552734375</cy>
+			<w>14.333160400390625</w>
+			<h>29.684764862060547</h>
+			<angle>77.3810043334961</angle>
+		</robndbox>
+		<polygon>
+			<x1>511.4096984863281</x1>
+			<y1>326.0</y1>
+			<x2>516.3093872070312</x2>
+			<y2>339.1051940917969</y2>
+			<x3>543.5087280273438</x3>
+			<y3>333.5018005371094</y3>
+			<x4>539.219970703125</x4>
+			<y4>319.77398681640625</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

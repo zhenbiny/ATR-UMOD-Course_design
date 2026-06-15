@@ -1,0 +1,143 @@
+{
+  "evaluator": "torch_eval",
+  "iou_mode": "obb",
+  "iou_thresholds": [
+    0.5,
+    0.550000011920929,
+    0.6000000238418579,
+    0.6499999761581421,
+    0.699999988079071,
+    0.75,
+    0.800000011920929,
+    0.8500000238418579,
+    0.8999999761581421,
+    0.949999988079071
+  ],
+  "summary": {
+    "precision": 0.6752725839614868,
+    "recall": 0.6767734289169312,
+    "AP50": 0.7222557067871094,
+    "AP50-95": 0.43201103806495667,
+    "predictions": 11240,
+    "targets": 11217
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "precision": 0.6910684704780579,
+      "recall": 0.6646161079406738,
+      "AP50": 0.7104388475418091,
+      "AP50-95": 0.42538580298423767,
+      "predictions": 4221,
+      "targets": 4389
+    },
+    {
+      "class_id": 1,
+      "class_name": "suv",
+      "precision": 0.6392942070960999,
+      "recall": 0.6873403787612915,
+      "AP50": 0.7039356827735901,
+      "AP50-95": 0.4529907703399658,
+      "predictions": 2947,
+      "targets": 2741
+    },
+    {
+      "class_id": 2,
+      "class_name": "van",
+      "precision": 0.720370352268219,
+      "recall": 0.6179507374763489,
+      "AP50": 0.7079907655715942,
+      "AP50-95": 0.4229719638824463,
+      "predictions": 1080,
+      "targets": 1259
+    },
+    {
+      "class_id": 3,
+      "class_name": "bus",
+      "precision": 0.790123462677002,
+      "recall": 0.6213592290878296,
+      "AP50": 0.7557705640792847,
+      "AP50-95": 0.4720257818698883,
+      "predictions": 81,
+      "targets": 103
+    },
+    {
+      "class_id": 4,
+      "class_name": "freight_car",
+      "precision": 0.7252440452575684,
+      "recall": 0.7602339386940002,
+      "AP50": 0.8108303546905518,
+      "AP50-95": 0.5250898599624634,
+      "predictions": 717,
+      "targets": 684
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.6261101365089417,
+      "recall": 0.6824781894683838,
+      "AP50": 0.6966702342033386,
+      "AP50-95": 0.42895427346229553,
+      "predictions": 1126,
+      "targets": 1033
+    },
+    {
+      "class_id": 6,
+      "class_name": "motorcycle",
+      "precision": 0.4615384638309479,
+      "recall": 0.4399999976158142,
+      "AP50": 0.43111518025398254,
+      "AP50-95": 0.1756705939769745,
+      "predictions": 143,
+      "targets": 150
+    },
+    {
+      "class_id": 7,
+      "class_name": "trailer",
+      "precision": 0.6530612111091614,
+      "recall": 0.8152866363525391,
+      "AP50": 0.8160505890846252,
+      "AP50-95": 0.5370322465896606,
+      "predictions": 392,
+      "targets": 314
+    },
+    {
+      "class_id": 8,
+      "class_name": "tank_truck",
+      "precision": 0.7802690863609314,
+      "recall": 0.7665198445320129,
+      "AP50": 0.8397237062454224,
+      "AP50-95": 0.5013977885246277,
+      "predictions": 223,
+      "targets": 227
+    },
+    {
+      "class_id": 9,
+      "class_name": "excavator",
+      "precision": 0.6504424810409546,
+      "recall": 0.604938268661499,
+      "AP50": 0.6952574253082275,
+      "AP50-95": 0.36220964789390564,
+      "predictions": 226,
+      "targets": 243
+    },
+    {
+      "class_id": 10,
+      "class_name": "crane",
+      "precision": 0.6904761791229248,
+      "recall": 0.7837837934494019,
+      "AP50": 0.777029812335968,
+      "AP50-95": 0.4483928084373474,
+      "predictions": 84,
+      "targets": 74
+    }
+  ],
+  "consistency": {
+    "gt_images": 981,
+    "pred_images": 973,
+    "matched_images": 972,
+    "missing_prediction_images": 9,
+    "prediction_only_images": 1
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>1_98.jpg</filename>
+	<path>orign/images/1_98.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>45</UAVangle>
+	<UAVheight>120</UAVheight>
+	<weather>0</weather>
+	<illumination>1</illumination>
+	<time>2022-6-16T13:56</time>
+	<location>7</location>
+	<segmented>0</segmented>
+	<object>
+		<name>bus</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>566.6625366210938</cx>
+			<cy>133.92466735839844</cy>
+			<w>14.770340919494629</w>
+			<h>28.147294998168945</h>
+			<angle>3.160222291946411</angle>
+		</robndbox>
+		<polygon>
+			<x1>560.0643920898438</x1>
+			<y1>119.46527862548828</y1>
+			<x2>558.5319213867188</x2>
+			<y2>147.22125244140625</y2>
+			<x3>573.2605590820312</x3>
+			<y3>148.384033203125</y3>
+			<x4>571.4725341796875</x4>
+			<y4>120.3581771850586</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_130.jpg</filename>
+	<path>orign/images/3_night_130.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>200</UAVheight>
+	<weather>8</weather>
+	<illumination>5</illumination>
+	<time>2022-9-27T18:46</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>truck</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>241.36158752441406</cx>
+			<cy>440.9007263183594</cy>
+			<w>87.0125503540039</w>
+			<h>21.43861961364746</h>
+			<angle>83.90950012207031</angle>
+		</robndbox>
+		<polygon>
+			<x1>235.31874084472656</x1>
+			<y1>485.2987060546875</y1>
+			<x2>256.6363525390625</x2>
+			<y2>483.0240783691406</y2>
+			<x3>247.4043731689453</x3>
+			<y3>396.502685546875</y3>
+			<x4>226.08677673339844</x4>
+			<y4>398.77728271484375</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

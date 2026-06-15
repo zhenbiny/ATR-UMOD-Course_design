@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>4_day_336.jpg</filename>
+	<path>orign/images/4_day_336.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>0</weather>
+	<illumination>2</illumination>
+	<time>2022-10-13T17:24</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>truck</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>291.379638671875</cx>
+			<cy>391.2173767089844</cy>
+			<w>136.2770538330078</w>
+			<h>27.086130142211914</h>
+			<angle>70.3031005859375</angle>
+		</robndbox>
+		<polygon>
+			<x1>301.5946960449219</x1>
+			<y1>459.93365478515625</y1>
+			<x2>327.0959777832031</x2>
+			<y2>450.8044128417969</y2>
+			<x3>281.1645812988281</x3>
+			<y3>322.5011291503906</y3>
+			<x4>255.6632843017578</x4>
+			<y4>331.6303405761719</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

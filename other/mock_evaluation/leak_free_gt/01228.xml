@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_330.jpg</filename>
+	<path>orign/images/3_night_330.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T19:13</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>van</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>364.7131042480469</cx>
+			<cy>336.4347839355469</cy>
+			<w>30.867353439331055</w>
+			<h>13.33709716796875</h>
+			<angle>64.79888153076172</angle>
+		</robndbox>
+		<polygon>
+			<x1>352.1076965332031</x1>
+			<y1>325.3095397949219</y1>
+			<x2>364.17535400390625</x2>
+			<y2>319.6306457519531</y2>
+			<x3>377.3185729980469</x3>
+			<y3>347.55999755859375</y3>
+			<x4>365.2509460449219</x4>
+			<y4>353.2388916015625</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

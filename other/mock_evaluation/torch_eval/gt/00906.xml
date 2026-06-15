@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>2_695.jpg</filename>
+	<path>orign/images/2_695.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>160</UAVheight>
+	<weather>0</weather>
+	<illumination>0</illumination>
+	<time>2022-7-14T13:04</time>
+	<location>1</location>
+	<segmented>0</segmented>
+	<object>
+		<name>truck</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>410.454345703125</cx>
+			<cy>408.3778076171875</cy>
+			<w>92.04830169677734</w>
+			<h>19.756988525390625</h>
+			<angle>85.09481811523438</angle>
+		</robndbox>
+		<polygon>
+			<x1>396.69940185546875</x1>
+			<y1>363.63250732421875</y1>
+			<x2>416.3612365722656</x2>
+			<y2>361.6775207519531</y2>
+			<x3>424.2320251464844</x3>
+			<y3>453.3887023925781</y3>
+			<x4>405.0725402832031</x4>
+			<y4>454.2060241699219</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

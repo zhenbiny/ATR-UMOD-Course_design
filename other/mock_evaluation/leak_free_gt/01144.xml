@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_255.jpg</filename>
+	<path>orign/images/3_night_255.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>30</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T19:08</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>suv</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>381.1575012207031</cx>
+			<cy>79.3345718383789</cy>
+			<w>11.141173362731934</w>
+			<h>23.724943161010742</h>
+			<angle>83.67174530029297</angle>
+		</robndbox>
+		<polygon>
+			<x1>368.7532958984375</x1>
+			<y1>75.10545349121094</y1>
+			<x2>369.9813232421875</x2>
+			<y2>86.17874145507812</y2>
+			<x3>393.56170654296875</x3>
+			<y3>83.56367492675781</y3>
+			<x4>392.33367919921875</x4>
+			<y4>72.49038696289062</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

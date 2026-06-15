@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_283.jpg</filename>
+	<path>orign/images/3_night_283.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T19:13</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>310.2845764160156</cx>
+			<cy>49.430511474609375</cy>
+			<w>31.999147415161133</w>
+			<h>12.165619850158691</h>
+			<angle>86.24235534667969</angle>
+		</robndbox>
+		<polygon>
+			<x1>303.1662902832031</x1>
+			<y1>33.86397933959961</y1>
+			<x2>315.3057556152344</x2>
+			<y2>33.066688537597656</y2>
+			<x3>317.4028625488281</x3>
+			<y3>64.99703979492188</y3>
+			<x4>305.2633972167969</x4>
+			<y4>65.79432678222656</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

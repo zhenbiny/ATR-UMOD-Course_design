@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>1_191.jpg</filename>
+	<path>orign/images/1_191.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>45</UAVangle>
+	<UAVheight>120</UAVheight>
+	<weather>0</weather>
+	<illumination>1</illumination>
+	<time>2022-6-16T15:30</time>
+	<location>0</location>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>371.92938232421875</cx>
+			<cy>302.30474853515625</cy>
+			<w>21.88553810119629</w>
+			<h>11.493973731994629</h>
+			<angle>87.35464477539062</angle>
+		</robndbox>
+		<polygon>
+			<x1>365.71258544921875</x1>
+			<y1>292.26910400390625</y1>
+			<x2>366.87200927734375</x2>
+			<y2>313.2640075683594</y2>
+			<x3>378.17529296875</x3>
+			<y3>312.9706115722656</y3>
+			<x4>377.1651916503906</x4>
+			<y4>291.1083984375</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>1_236.jpg</filename>
+	<path>orign/images/1_236.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>60</UAVangle>
+	<UAVheight>120</UAVheight>
+	<weather>8</weather>
+	<illumination>5</illumination>
+	<time>2022-6-16T15:30</time>
+	<location>5</location>
+	<segmented>0</segmented>
+	<object>
+		<name>tank_truck</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>311.93646240234375</cx>
+			<cy>178.29202270507812</cy>
+			<w>34.014434814453125</w>
+			<h>15.569581985473633</h>
+			<angle>1.8800301551818848</angle>
+		</robndbox>
+		<polygon>
+			<x1>295.19378662109375</x1>
+			<y1>169.9534912109375</y1>
+			<x2>294.80621337890625</x2>
+			<y2>185.06976318359375</y2>
+			<x3>328.0</x3>
+			<y3>186.60830688476562</y3>
+			<x4>329.1899108886719</x4>
+			<y4>171.06939697265625</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

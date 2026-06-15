@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>2_453.jpg</filename>
+	<path>orign/images/2_453.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>45</UAVangle>
+	<UAVheight>160</UAVheight>
+	<weather>0</weather>
+	<illumination>0</illumination>
+	<time>2022-7-14T11:57</time>
+	<location>1</location>
+	<segmented>0</segmented>
+	<object>
+		<name>bus</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>329.4749755859375</cx>
+			<cy>153.54290771484375</cy>
+			<w>11.148515701293945</w>
+			<h>7.184375286102295</h>
+			<angle>89.57260131835938</angle>
+		</robndbox>
+		<polygon>
+			<x1>326.2232971191406</x1>
+			<y1>148.1490936279297</y1>
+			<x2>325.92449951171875</x2>
+			<y2>159.143798828125</y2>
+			<x3>333.1080017089844</x3>
+			<y3>159.0</y3>
+			<x4>333.0255126953125</x4>
+			<y4>147.94200134277344</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

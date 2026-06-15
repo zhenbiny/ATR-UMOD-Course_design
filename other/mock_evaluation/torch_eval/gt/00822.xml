@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>2_619.jpg</filename>
+	<path>orign/images/2_619.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>25</UAVangle>
+	<UAVheight>160</UAVheight>
+	<weather>0</weather>
+	<illumination>0</illumination>
+	<time>2022-7-14T12:34</time>
+	<location>1</location>
+	<segmented>0</segmented>
+	<object>
+		<name>van</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>371.7811584472656</cx>
+			<cy>46.09895324707031</cy>
+			<w>8.645691871643066</w>
+			<h>20.258230209350586</h>
+			<angle>4.453644752502441</angle>
+		</robndbox>
+		<polygon>
+			<x1>369.61920166015625</x1>
+			<y1>35.820899963378906</y1>
+			<x2>366.684814453125</x2>
+			<y2>55.86180114746094</y2>
+			<x3>375.32940673828125</x3>
+			<y3>56.212100982666016</y3>
+			<x4>376.87750244140625</x4>
+			<y4>36.33610153198242</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>

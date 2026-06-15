@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>images</folder>
+	<filename>3_night_318.jpg</filename>
+	<path>orign/images/3_night_318.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<UAVangle>0</UAVangle>
+	<UAVheight>150</UAVheight>
+	<weather>6</weather>
+	<illumination>6</illumination>
+	<time>2022-9-27T19:13</time>
+	<location>3</location>
+	<segmented>0</segmented>
+	<object>
+		<name>freight_car</name>
+		<type>robndbox</type>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>369.2581787109375</cx>
+			<cy>70.45051574707031</cy>
+			<w>43.39542770385742</w>
+			<h>19.93280792236328</h>
+			<angle>68.28802490234375</angle>
+		</robndbox>
+		<polygon>
+			<x1>351.9719543457031</x1>
+			<y1>53.97914505004883</y1>
+			<x2>370.4906311035156</x2>
+			<y2>46.60517883300781</y2>
+			<x3>386.54437255859375</x3>
+			<y3>86.92192077636719</y3>
+			<x4>368.02569580078125</x4>
+			<y4>94.29589080810547</y4>
+		</polygon>
+	<smoke>0</smoke>
+	</object>
+</annotation>
