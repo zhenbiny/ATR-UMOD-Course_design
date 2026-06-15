@@ -143,14 +143,18 @@ python multimodal_detection/src/evaluate.py --weights multimodal_detection/works
 * **输出产物**：
   * 在 `multimodal_detection/workspace/evaluations/` 中可查看评估报告图表，并在其 `visualizations/` 目录下查看自动画好旋转预测框的可视化图片。
 
-### 📈 第五步：测试集一键集成推理
-当您获取了无标签的测试集数据后，只需在一键推理脚本中配置路径，即可自动合并多模态通道并使用集成算法预测生成符合规范的提交格式文件：
+### 📈 第五步：测试集一键推理与集成
+当您获取了无标签的测试集数据后，只需在推理脚本中配置路径与推理模式，即可自动合并多模态通道并使用单模型或集成算法预测生成符合规范的提交格式文件：
 
-1. 打开 [multimodal_detection/src/run_inference_final.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference_final.py)。
-2. 在第 10、11 行配置测试集目录：
+1. 打开 [multimodal_detection/src/run_inference_final.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference_final.py)（或 `run_inference.py`）。
+2. 在第 10、11 行配置测试集目录，并在第 16 行配置推理模式：
    ```python
    TEST_RGB_DIR = r"您的可见光测试集目录路径"
    TEST_IR_DIR = r"您的红外测试集目录路径"
+   
+   # 可选 "single" (仅加载 Fold 0 单模型，GPU OBB NMS，速度极快) 
+   # 或 "ensemble" (自动加载 5 个 Fold 并调用基于 OpenCV 的旋转框 OBB-NMS 融合去重)
+   INFERENCE_MODE = "single" 
    ```
 3. 保存并运行推理脚本：
    ```powershell

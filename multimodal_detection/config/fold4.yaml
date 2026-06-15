@@ -1,6 +1,7 @@
 # YOLOv8-OBB dataset config for Fold 4
-train: c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/data_splits/train_fold4.txt
-val: c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/data_splits/val_fold4.txt
+path: ./multimodal_detection
+train: data_splits/train_fold4.txt
+val: data_splits/val_fold4.txt
 
 nc: 11
 names:

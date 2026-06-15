@@ -59,12 +59,19 @@
 
 ---
 
-## 6. 测试集一键集成推理与提交包生成 (`run_inference.py`)
-我们在 [src/run_inference.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference.py) 中编写了一个易于使用的提交文件生成脚本，不需要使用复杂的命令行参数：
-1. 打开 [run_inference.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference.py)。
-2. 在第 9 行 of `TEST_DIR = r""` 中，填入您的测试集绝对路径（例如：`TEST_DIR = r"D:\dataset\test"`）。
+## 6. 测试集一键集成推理与提交包生成 (`run_inference_final.py`)
+我们在 [src/run_inference_final.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference_final.py) 中编写了一个易于使用的提交文件生成脚本，不需要使用复杂的命令行参数：
+1. 打开 [run_inference_final.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference_final.py)。
+2. 在第 10、11 行配置测试集目录，并在第 16 行配置推理模式：
+   ```python
+   TEST_RGB_DIR = r"您的可见光测试集目录路径"
+   TEST_IR_DIR = r"您的红外测试集目录路径"
+   
+   # 可选 "single" (单模型快速推理) 或 "ensemble" (5折模型 OBB-NMS 融合去重)
+   INFERENCE_MODE = "single" 
+   ```
 3. 使用 conda 的 study 环境运行该脚本：
    ```powershell
-   & D:\Environment\Anaconda3\envs\study\python.exe c:\Users\17638\Desktop\NUDT\智能图像处理\multimodal_detection\src\run_inference.py
+   & D:\Environment\Anaconda3\envs\study\python.exe c:\Users\17638\Desktop\NUDT\智能图像处理\multimodal_detection\src\run_inference_final.py
    ```
 4. 运行完毕后，最终打包结果会自动输出在 `multimodal_detection/submission_results/` 中，压缩该文件夹提交即可！

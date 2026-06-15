@@ -182,12 +182,14 @@ def main():
         
         with open(train_txt_path, "w", encoding="utf-8") as f:
             for filepath in train_files:
-                # 规范化路径分隔符为正斜杠，以防 YOLO 在 Windows/Linux 平台混淆
-                f.write(filepath.replace("\\", "/") + "\n")
+                # 规范化路径分隔符为正斜杠，并以相对于 DEV_DIR 的相对路径写入
+                rel_path = os.path.relpath(filepath, DEV_DIR).replace("\\", "/")
+                f.write(rel_path + "\n")
                 
         with open(val_txt_path, "w", encoding="utf-8") as f:
             for filepath in val_files:
-                f.write(filepath.replace("\\", "/") + "\n")
+                rel_path = os.path.relpath(filepath, DEV_DIR).replace("\\", "/")
+                f.write(rel_path + "\n")
                 
         print(f"Fold {fold} 划分完成: 训练集 {len(train_files)} 张, 验证集 {len(val_files)} 张")
         

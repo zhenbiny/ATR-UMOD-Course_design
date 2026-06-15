@@ -10,6 +10,7 @@ multimodal_detection/data/
 # 2. 屏蔽本地训练生成的权重与日志工作空间
 baseline_visible/workspace/
 multimodal_detection/workspace/
+multimodal_detection/submission_results/
 runs/
 .ultralytics/
 

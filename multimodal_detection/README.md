@@ -15,7 +15,7 @@
   * [train_kfold.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/train_kfold.py)：支持**断点智能恢复**与**自动跳过已完成折**的 5 折循环训练控制脚本。
   * [evaluate.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/evaluate.py)：单模型本地 mAP 评测与可视化脚本。
   * [inference.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/inference.py)：命令行多模型集成推理打包脚本。
-  * [run_inference.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference.py)：免命令行参数的测试集一键集成推理打包程序。
+  * [run_inference_final.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference_final.py)：免参数一键预测提交结果封装脚本。
 * **📁 workspace/**: 模型权重、评测日志及可视化产出。
   * `yolov8_fold0` ~ `yolov8_fold4`: 5 折的最佳模型权重（`weights/best.pt`）与训练曲线。
   * `visualizations/`: 旋转框画框检测可视化结果。
@@ -89,12 +89,20 @@
 
 当您获取测试集路径后，请执行以下步骤生成最终提交文件：
 
-1. 打开 [multimodal_detection/src/run_inference.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference.py) 文件。
-2. 将第 9 行的 `TEST_DIR = r""` 填写为您本地的测试集路径。
+1. 打开 [multimodal_detection/src/run_inference_final.py](file:///c:/Users/17638/Desktop/NUDT/智能图像处理/multimodal_detection/src/run_inference_final.py) (或 `run_inference.py`) 文件。
+2. 在第 10、11 行配置测试集目录，并配置推理模式：
+   ```python
+   TEST_RGB_DIR = r"您的可见光测试集目录路径"
+   TEST_IR_DIR = r"您的红外测试集目录路径"
+   
+   # 可选 "single" (加载 Fold 0 单模型，速度极快) 
+   # 或 "ensemble" (自动加载 5 折模型并执行 OpenCV 旋转框 OBB-NMS 融合去重)
+   INFERENCE_MODE = "single" 
+   ```
 3. 保存并关闭文件。
 4. 打开命令行终端，执行以下命令运行推理：
    ```powershell
-   & D:\Environment\Anaconda3\envs\study\python.exe c:\Users\17638\Desktop\NUDT\智能图像处理\multimodal_detection\src\run_inference.py
+   & D:\Environment\Anaconda3\envs\study\python.exe c:\Users\17638\Desktop\NUDT\智能图像处理\multimodal_detection\src\run_inference_final.py
    ```
 5. 推理完成后，结果将保存在 `multimodal_detection/submission_results/` 文件夹下。
 6. 可直接打包 `submission_results` 目录进行提交。

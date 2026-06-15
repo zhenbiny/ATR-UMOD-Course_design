@@ -144,10 +144,14 @@ def main():
     print(f"正在加载 Fold {args.fold} 最优模型: {model_pt}")
     model = YOLO(model_pt)
     
-    # 1. 运行验证集评估
-    yaml_config_path = os.path.join(args.workspace, "..", "config", f"fold{args.fold}.yaml")
+    # 1. 运行验证集评估 (动态生成包含本机绝对路径的配置文件)
+    try:
+        from train_kfold import generate_yaml
+        yaml_config_path = generate_yaml(args.fold)
+    except ImportError:
+        yaml_config_path = os.path.join(args.workspace, "..", "config", f"fold{args.fold}.yaml")
+        
     print(f"开始在 Fold {args.fold} 验证集上运行官方评估指标...")
-    
     metrics = model.val(data=yaml_config_path, device=0, verbose=True, workers=0)
     
     print("\n-------------------- 评估结果摘要 --------------------")

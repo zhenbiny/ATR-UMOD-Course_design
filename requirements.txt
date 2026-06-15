@@ -2,12 +2,12 @@
 # ATR-UMOD Multimodal Detection Dependencies
 # ==============================================================================
 
-numpy>=1.23.0
-opencv-python>=4.6.0
+numpy==2.4.6
+opencv-python==4.13.0
 torch>=2.0.0
-ultralytics>=8.1.0
-scikit-learn>=1.2.0
-tqdm>=4.64.0
+ultralytics==8.4.52
+scikit-learn==1.8.0
+tqdm==4.67.3
 matplotlib>=3.6.0
-python-docx>=0.8.11
+python-docx==1.2.0
 pypdf>=3.0.0

@@ -24,13 +24,15 @@ def generate_yaml(fold):
     """自动生成对应 Fold 的 YOLO 数据配置文件"""
     yaml_path = os.path.join(CONFIG_DIR, f"fold{fold}.yaml")
     
-    train_txt = os.path.join(SPLITS_DIR, f"train_fold{fold}.txt").replace("\\", "/")
-    val_txt = os.path.join(SPLITS_DIR, f"val_fold{fold}.txt").replace("\\", "/")
+    # 将路径分隔符统一为正斜杠，并以变量传入 f-string (避免 Python 3.12 以下版本 f-string 内包含反斜杠报错)
+    dev_dir_path = DEV_DIR.replace("\\", "/")
     
     # YOLO 格式的 yaml 配置内容
+    # path 指向当前运行机器上的绝对路径，而 train 和 val 设为相对于 path 的相对路径
     yaml_content = f"""# YOLOv8-OBB dataset config for Fold {fold}
-train: {train_txt}
-val: {val_txt}
+path: {dev_dir_path}
+train: data_splits/train_fold{fold}.txt
+val: data_splits/val_fold{fold}.txt
 
 nc: {len(CLASSES)}
 names:
@@ -41,7 +43,7 @@ names:
     with open(yaml_path, "w", encoding="utf-8") as f:
         f.write(yaml_content)
         
-    print(f"YAML 配置文件生成成功: {yaml_path}")
+    print(f"YAML 配置文件生成成功 (动态绝对路径): {yaml_path}")
     return yaml_path
 
 def train_fold(fold, model_name, epochs, batch, imgsz):
@@ -96,7 +98,7 @@ def train_fold(fold, model_name, epochs, batch, imgsz):
 
 def main():
     parser = argparse.ArgumentParser(description="ATR-UMOD 多模态 5折交叉验证训练控制脚本")
-    parser.add_argument("--fold", type=str, default="0", help="要训练的折数 (0-4，或 'all' 代表训练所有折)")
+    parser.add_argument("--fold", type=str, default="all", help="要训练的折数 (0-4，或 'all' 代表训练所有折，默认 all)")
     parser.add_argument("--model", type=str, default="yolov8s-obb.pt", help="基础 YOLO OBB 模型 (如 yolov8n-obb.pt, yolov8s-obb.pt)")
     parser.add_argument("--epochs", type=int, default=20, help="训练轮数 (默认 20)")
     parser.add_argument("--batch", type=int, default=16, help="Batch Size (默认 16)")
